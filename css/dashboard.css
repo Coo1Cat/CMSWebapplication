@@ -1,0 +1,120 @@
+/* dashboard.css */
+
+/* Body styles */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #152238;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  /* Header, Main, Footer */
+  min-height: 100vh;
+}
+
+/* Header styles */
+header {
+  background-color: #09111e;
+  color: #818177;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* h2 {
+  color: #771717;
+} */
+
+
+section div h2 {
+  color: #4b4b41;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.widgetout {
+  color: #4b4b41;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  border-radius: 10px;
+  
+}
+
+#notSoMain {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 20px;
+}
+
+/* Main section styles */
+#main {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  grid-gap: 20px;
+}
+
+.widget {
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  padding: 20px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  border-radius: 10px;
+}
+
+.widget h2 {
+  margin: 0;
+}
+
+/* Additional styles for the last three widgets */
+#main .widget:nth-last-child(-n+3) {
+  margin-right: 0;
+}
+
+.clear::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer styles */
+footer {
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  background-color: #152238;
+}
+
+/* button styling */
+
+input[type="text"],
+input[type="email"] {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  margin-top: 10px;
+  margin-left: 75%;
+  padding: 10px 20px;
+  background-color: #152238;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 95px;
+  
+}
+
+input[type="submit"]:hover {
+  background-color: #818177;
+  
+}
